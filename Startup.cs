@@ -27,7 +27,7 @@ namespace api
             services.AddAuthentication("Bearer")
                 .AddJwtBearer("Bearer", options =>
                 {
-                    options.Authority = "http://localhost:5000";
+                    options.Authority = "https://demo.identityserver.io/";
                     options.RequireHttpsMetadata = false;
                     options.Audience = "api";
                 });
